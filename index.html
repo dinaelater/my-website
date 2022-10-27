@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>TAKE</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+  <section class="header">
+    <div class="header-bg position-relative WOW">
+      <div class="header-content position-absolute w-100">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-lg-5 col-12">
+              <h2 class="header-title animated bounceInUp" id="par">Picture perfect</h2>
+              <span id="pageYOffset">window.scrollY = <span id="position">0px</span></span>
+              <p class="header-content">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua.
+              </p>
+              <div id="TAKE">{{ message }}</div>
+              <!-- Modal content-->
+              <div class="form-group">
+                <label for="email" class="col-form-label">Email address:</label>
+                <input type="email" class="form-control" id="email" name="email">
+              </div>
+              <div class="form-group">
+                <label for="pwd" class="col-form-label">Password:</label>
+                <input type="password" class="form-control" id="pass" name="password"
+                  onkeyup="validatePassword(this.value);"><span id="strong_pass_msg"></span>
+                <input type="checkbox" onclick="myFunction()"> <span>Show Password</span>
+              </div>
+              <div class="form-group">
+                <label for="pwd" class="col-form-label">Confirm Password:</label>
+                <input type="password" class="form-control" id="confirm_pass" name="password"
+                  onkeyup="confirm_password()"><span id="msg"></span>
+                <br>
+                <button onclick="myFunction()">submit</button>
+
+              </div>
+            </div>
+            <div class="col-lg-7 col-12 text-right">
+              <img src="img/2.png" class="img-fluid mobile-photo" title="mobile photo" alt="mobile photo 2" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <button class="togglePhoto" onclick="TogglePhoto()">Toggle Photo </button>
+    <input type="text" class="form-control" id="usr" placeholder="first name" onfocus="this.placeholder=''"
+      onblur="this.placeholder='Type'">
+  </section>
+
+  <!-- Start New Section -->
+  <section class="new">
+    <div class="container">
+      <div class="row align-items-end">
+        <div class="col-lg-6 col-12">
+          <p>Enter subject below in upper case and see what happpens.</p>
+          <input type="text" onkeyup="username(this.value)" id="subject">
+          <h3 class="new-title">Hello <span id="username"></span></h3>
+          <p class="new-content">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+            <br>
+            <br>
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+            laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+            totam rem aperiam.
+            <br>
+            <br>
+            eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+            ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos
+            qui ratione voluptatem.
+            <br>
+            <br>
+            sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci
+            velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
+            voluptatem.
+          </p>
+          <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+        </div>
+        <div class="col-lg-6 col-12">
+          <p class="new-content">
+            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+            dolores eos qui ratione voluptatem sequi nesciunt.
+            <br>
+            <br>
+            Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+            numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="sport">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 color1">
+          <h3>Design quality</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut adipisicing .
+          </p>
+        </div>
+        <div class="col-lg-4 color2">
+          <h3>Built to last </h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut adipisicing .
+          </p>
+        </div>
+        <div class="col-lg-4 color3">
+          <h3>Our clients</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut adipisicing .
+          </p>
+        </div>
+        <div class="col-lg-8 color4">
+          <h3>How to shoo grea</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut adipisicing .
+          </p>
+        </div>
+        <div class="col-lg-4 color5">
+          <h3>Perfect pictures</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut adipisicing .
+          </p>
+          <button type="button" class="btn btn-danger">Danger</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="so">
+    <div class="container">
+      <p><a href="https://www.w3schools.com" id="w3s">W3Schools.com</a></p>
+
+      <button>Change href Value</button>
+      <h3>A look at the details</h3>
+      <div class="row">
+        <div class="col-lg-3">
+          <h4>Web based</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat</p>
+        </div>
+        <div class="col-lg-3">
+          <h4>Performance</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat</p>
+        </div>
+        <div class="col-lg-3">
+          <h4>Clultral</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat</p>
+        </div>
+        <div class="col-lg-3">
+          <h4>Sustainability</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat</p>
+        </div>
+      </div>
+  </section>
+  <section class="do ">
+    <div class="do-bg ">
+      <div class="container">
+        <div class="row ">
+          <div class="col-lg-5">
+            <input id="myInput" type="text" placeholder="Search..">
+            <br><br>
+            <table>
+              <thead>
+                <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>Email</th>
+                </tr>
+              </thead>
+              <tbody id="myTable">
+                <tr>
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>john@example.com</td>
+                </tr>
+                <tr>
+                  <td>Mary</td>
+                  <td>Moe</td>
+                  <td>mary@mail.com</td>
+                </tr>
+                <tr>
+                  <td>July</td>
+                  <td>Dooley</td>
+                  <td>july@greatstuff.com</td>
+                </tr>
+                <tr>
+                  <td>Anja</td>
+                  <td>Ravendale</td>
+                  <td>a_r@test.com</td>
+                </tr>
+              </tbody>
+            </table>
+            <h3>More power behind every pixel.</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+              ea commodo consequat</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="lg">
+    <div class="container">
+      <h3>Reasons to get onboard</h3>
+      <div class="row">
+        <div class="col-lg-4">
+          <h4>Web based</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. </p>
+        </div>
+        <div class="col-lg-4">
+          <h4>Performance</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat</p>
+        </div>
+        <div class="col-lg-4">
+          <h4>Clultral</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="nd">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <button type="button" class="btn btn-secondary btn-lg" disabled>Legacy</button>
+          <h4>Go it solo</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat. </p>
+          <button type="button" class="btn btn-secondary color">Buy now $9</button>
+          <br>
+          <br> <i class="fab fa-apple fa-2x"></i>
+          <i class="fab fa-windows fa-2x"></i>
+        </div>
+        <div class="col-lg-6 color8">
+          <button type="button" class="btn btn-secondary btn-lg" disabled>Most Popular</button>
+          <h4>Team Plan</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat</p>
+          <button type="button" class="btn btn-secondary">Buy now $9</button>
+          <br>
+          <br> <i class="fab fa-apple fa-2x"></i>
+          <i class="fab fa-windows fa-2x"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="rl">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <form name="form" method="GET">
+            <input type="text" name="input1" value=20><br>
+            <input type="text" name="input2" value=10><br>
+            <input type="button" value="ADD" onclick="addition()"> <br><span id="dn"></span>
+          </form>
+          <br>
+          <h5>Get in touch</h5>
+          <p>orem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat.
+          </p>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="col-lg-5">
+          <input type="email" class="form-control">
+        </div>
+        <div class="col-lg-2">
+          <ul class="p-0">
+            <il>Resources</il>
+            <il>Tour</il>
+            <il> Customers </il>
+            <il>Pricing and Plans </il>
+            <il>New Features</il>
+            <il> Education</il>
+          </ul>
+        </div>
+        <div class="col-lg-2">
+          <button id="goTop">top</button>
+          <ul class="p-0">
+            <il>Resources</il>
+            <il>Tour</il>
+            <il> Customers </il>
+            <il>Pricing and Plans </il>
+            <il>New Features</il>
+            <il> Education</il>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+  <script src="js/all.min.js"></script>
+  <script src="js/wow.js"></script>
+  <script src="js/my-js.js"></script>
+  <script src="js/my-jquery.js"></script>
+  <script src="js/vue.min.js"></script>
+  <script src="js/vue.js"></script>
+  <script>
+    new Vue({
+      el: '#TAKE',
+      data: {
+        message: 'hello from vue.js'
+      }
+    })
+  </script>
+</body>
+
+</html>

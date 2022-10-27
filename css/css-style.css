@@ -1,0 +1,68 @@
+.section1{
+  background-image: url(../imag/Take.png);
+  width: 100%;
+ background-repeat: no-repeat;
+}
+.lead {
+  margin-bottom: 40px;
+    font-size: 20px;
+    margin: 30px;
+    color: #fff;
+    padding: 10px;
+}
+}
+.section2{
+
+  background-color: #fff;
+}
+.new{
+  width:100%;
+}
+.col-lg-3{
+  background-color: #f5989d;
+}
+.col-lg-3 td{
+  background-color: #615f7d;
+}
+ h1 {
+    padding: 30px;
+    margin: 14px;
+    color: #fff;
+    font-size: 50px;
+}
+
+.navbar-brand {
+margin-bottom: 55px;
+font-size: 50px;
+margin: 30px;
+color: #fff;
+padding: 10px;
+font-weight:700;
+}
+row{
+  margin: 21px;
+  padding: 0px;  
+}
+img {
+  width: 50%;
+}
+.container{
+  padding: 50px;
+  margin: 40px;
+}
+.leftDiv,
+.rightDiv {
+    width: 50%;
+    flex-wrap: wrap;
+    display: flex;
+}
+.leftDiv img {
+  width:50%;
+  flex-wrap: wrap;
+}
+.rightDiv{
+  margin-left: auto;
+}
+.leftDiv{
+  margin-right:auto;
+}
